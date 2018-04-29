@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+
+
+{% block head %}
+    <style>
+        .country-list {
+            display: flex;
+            list-style-type: none;
+            flex-wrap: wrap;
+            padding-top: 5em;
+            padding-left: 0;
+            align-items: center;
+        }
+
+        .country-item {
+            width: 33%;
+            padding: 4px 8px;
+        }
+    </style>
+{% endblock %}
+
+
+ {% block body %}
+
+
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <ul class="country-list">
+                {% for x in country_list %}
+                    <li class="country-item">
+                        <a href="{{ x.url }}">{{ x.name }}</a>
+                    </li>
+                {% endfor %}
+                </ul>
+            </div>
+        </div>
+
+
+
+    {% endblock %}
+

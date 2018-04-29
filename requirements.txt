@@ -1,0 +1,7 @@
+flask
+sqlite3
+pandas
+matplotlib
+pycountry
+scrapy
+sqlite3

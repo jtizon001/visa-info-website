@@ -1,0 +1,203 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <style>
+        h1, h2, h3 {
+            color: #1c5d80;
+            font-weight: normal;
+            font-family: 'Oswald', sans-serif;
+            margin: .75em 0 .6em;
+            text-transform: uppercase;
+        }
+
+
+        .tsg-rwd-qf-box-title {
+            font-weight: bold;
+            line-height: 2em;
+            color: #1c5d80;
+            font-family: 'Oswald', sans-serif;
+        }
+
+        section:nth-child(even){
+            background-color: #eeeeee;
+        }
+
+        #embassies .tsg-rwd-accordion-copy h2 {
+            font-size: 1.3em;
+        }
+    </style>
+
+
+{% endblock %}
+
+ {% block body %}
+     <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h1>{{ xAdvisory }}</h1>
+                    <ol>
+                        <li>
+                            <a href="#advisory">Advisory</a>
+                        </li>
+                        <li>
+                            <a href="#key">Key Facts</a>
+                        </li>
+                        <li>
+                            <a href="#">Advisory</a>
+                        </li>
+                        <li>
+                            <a href="#embassies">Embassies and Consulate</a>
+                        </li>
+                        <li>
+                            <a href="#destination">Destination Information</a>
+                        </li>
+                        <li>
+                            <a href="#visa">Visa and Entry Requirements</a>
+                        </li>
+                        <li>
+                            <a href="#safety">Safety</a>
+                        </li>
+                        <li>
+                            <a href="#laws">Laws</a>
+                        </li>
+                        <li>
+                            <a href="#travel">Travel and Transportation Information</a>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+     </section>
+
+
+
+
+     <section id="advisory">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h2>Advisory</h2>
+                    <div>{{ advisoryInfo }}</div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+
+
+
+
+
+        <section id="key">
+            <div  class="container">
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+                        <h2>Key Facts</h2>
+                        <div class="row">
+                            <div class="col-lg-6">{{ chartLeft }}</div>
+                            <div class="col-lg-6">{{ chartRight }}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+        <section id="embassies">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+                        <h2>Embassies and Consulates</h2>
+                        <div>{{ embassies }}</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="destination">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+
+                        <h2>Destination Information</h2>
+                        <div>{{ destinationInfo }}</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="visa">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+                        <h2>Visa and Entry Requirements</h2>
+                        <div>{{ visaReqs }}</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="safety">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+                        <h2>Safety</h2>
+                        <div>{{ safety }}</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="laws">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+                        <h2>Laws</h2>
+                        <div>{{ laws }}</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section id="health">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+                        <h2>Health</h2>
+                        <div> {{ health }}</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section id="travel">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+                        <h2>Travel and Transportation Information</h2>
+                        <div> {{ travel }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+{% endblock %}
